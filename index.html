@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Event Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>JavaScript Event Playground 🎉</h1>
+  </header>
+
+  <!-- 🎈 Event Handling Section -->
+  <section class="box">
+    <h2>Event Handling 🎈</h2>
+    <button id="clickBtn">Click Me!</button>
+    <p id="clickOutput"></p>
+
+    <div id="hoverBox">Hover over me!</div>
+
+    <input type="text" id="keyInput" placeholder="Type something..." />
+    <p id="keyFeedback"></p>
+
+    <button id="secretActionBtn">Double-click or hold me!</button>
+    <p id="secretMessage"></p>
+  </section>
+
+  <!-- 🎮 Interactive Elements Section -->
+  <section class="box">
+    <h2>Interactive Elements 🎮</h2>
+
+    <button id="toggleBtn">Toggle Color</button>
+
+    <div class="gallery">
+      <img id="galleryImg" src="https://via.placeholder.com/300x200?text=Image+1 " alt="Gallery Image" />
+      <button id="nextBtn">Next</button>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab-link active" data-tab="tab1">Tab 1</button>
+      <button class="tab-link" data-tab="tab2">Tab 2</button>
+      <button class="tab-link" data-tab="tab3">Tab 3</button>
+
+      <div class="tab-content active" id="tab1">Content for Tab 1</div>
+      <div class="tab-content" id="tab2">Content for Tab 2</div>
+      <div class="tab-content" id="tab3">Content for Tab 3</div>
+    </div>
+  </section>
+
+  <!-- 📋 Form Validation Section -->
+  <section class="box">
+    <h2>Form Validation 📋✅</h2>
+    <form id="myForm">
+      <label for="name">Name:</label><br/>
+      <input type="text" id="name" name="name" required><br/>
+      <div class="error" id="nameError">Please enter your name.</div>
+
+      <label for="email">Email:</label><br/>
+      <input type="email" id="email" name="email" required><br/>
+      <div class="error" id="emailError">Enter a valid email address.</div>
+
+      <label for="password">Password:</label><br/>
+      <input type="password" id="password" name="password" required><br/>
+      <div class="error" id="passwordError">Password must be at least 8 characters.</div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
